@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:title="OPEN"
+        android:id="@+id/action_fragment_home_itemchecked_cab2_edit"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:title="RENAME"
+        android:id="@+id/action_fragment_home_itemchecked_cab2_rename"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:title="SHARE"
+        android:id="@+id/action_fragment_home_itemchecked_cab2_share"
+        app:showAsAction="never"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider">
+    </item>
+    <item
+        android:title="EXPORT"
+        android:id="@+id/action_fragment_home_itemchecked_cab2_export"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:title="DELETE"
+        android:id="@+id/action_fragment_home_itemchecked_cab2_delete"
+        app:showAsAction="never">
+    </item>
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fp_bt_1_press">#EAAFD9D5</color>
+    <color name="fp_bt_1_default">#00FFFFFF</color>
+
+    <color name="fp_bt_2_press">#FFFFCBDD</color>
+    <color name="fp_bt_2_default">#ffffdffd</color>
+
+    <color name="fp_bt_3_press">#FFFFEF99</color>
+    <color name="fp_bt_3_default">#fffffdbb</color>
+
+    <color name="fp_bt_4_press">#EA9EE3F5</color>
+    <color name="fp_bt_4_default">#eab9ebf5</color>
+
+    <color name="cee_default">#FF4B97A9</color>
+    <color name="cee_text_default">#ff88cada</color>
+    <color name="cee_press">#ff437c8b</color>
+
+    <color name="me_default">#ea7fc9c3</color>
+    <color name="me_text_default">#ffd4e3e0</color>
+    <color name="me_press">#FF519088</color>
+
+    <color name="divider">#ffbfcecc</color>
+
+    <color name="qa_header">#C494D6D1</color>
+    <color name="qa_text_bg">#80bfcecc</color>
+
+    <color name="seafoam">#ffc6f9e5</color>
+    <color name="chartreuse">#ffb6e9b5</color>
+    <color name="emerald">#ffa6d9b5</color>
+    <color name="bluegrass">#ff96c9b5</color>
+    <color name="turquoise">#ff86b9b5</color>
+    <color name="slate">#ff76a9b5</color>
+
+    <color name="cee_caption">#ca2e434a</color>
+
+</resources>

@@ -1,0 +1,95 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bootchai.cee.HelpActivity$PlaceholderFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Q &amp; A POSTS"
+        android:gravity="center_vertical"
+        android:background="@color/me_text_default"
+        android:textStyle="bold"
+        android:padding="4dp"
+        android:textSize="16dp" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/divider"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_help_rv_qaposts"
+            android:background="@color/qa_text_bg" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/divider"></FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            card_view:cardCornerRadius="25dp"
+            card_view:cardBackgroundColor="#ea7fc9c3"
+            android:id="@+id/fragment_help_cv_help"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Help"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="88dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:ems="10"
+            android:layout_gravity="top|left"
+            android:id="@+id/fragment_help_et_in"
+            android:background="@drawable/mybackground_1"
+            android:gravity="top|left"
+            android:focusable="true"
+            android:padding="4dp"
+            android:textSize="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/fragment_help_cv_help"
+            android:layout_marginLeft="16dp"
+            android:autoText="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bootchai.cee.SettingsActivity$PlaceholderFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="HOME"
+        android:gravity="center_vertical"
+        android:background="@color/me_text_default"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="4dp"
+        android:paddingRight="4dp"
+        android:padding="4dp"
+        android:paddingBottom="4dp"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Text Size"
+            android:layout_marginLeft="16dp" />
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_settings_sb_hometextsize"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:max="16"
+            android:progress="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="[10]"
+            android:id="@+id/fragment_settings_tv_hometextsizeshow"
+            android:layout_marginRight="16dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/divider">
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="SAVED NOTES"
+        android:gravity="center_vertical"
+        android:background="@color/me_text_default"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:singleLine="true"
+        android:paddingLeft="16dp"
+        android:paddingTop="4dp"
+        android:paddingRight="4dp"
+        android:padding="4dp"
+        android:paddingBottom="4dp"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Automatically Export All Notes to Google Drive"
+            android:layout_marginLeft="16dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/fragment_settings_sw_autoexport"
+            android:layout_marginLeft="24dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/divider"></FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="HELP"
+        android:gravity="center_vertical"
+        android:background="@color/me_text_default"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="4dp"
+        android:paddingRight="4dp"
+        android:padding="4dp"
+        android:paddingBottom="4dp"
+        android:textSize="16dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="top">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Text Size"
+                    android:layout_marginLeft="16dp" />
+
+                <SeekBar
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment_settings_sb_helptextsize"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:max="16"
+                    android:progress="2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="[10]"
+                    android:id="@+id/fragment_settings_tv_helptextsizeshow"
+                    android:layout_marginRight="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Server Address :"
+                    android:layout_marginLeft="16dp"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment_settings_et_helpserveraddress"
+                    android:layout_weight="1"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="http://192.168.29.117"
+                    android:inputType="textUri"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:hint="Needs to start with http://" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/divider"></FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Default"
+        android:layout_gravity="right"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bt_state_fp_6"
+        android:textColor="#b7000000"
+        android:id="@+id/fragment_settings_bt_default"/>
+
+
+</LinearLayout>
